@@ -663,7 +663,7 @@
 		.list {
 			display: block;
 			box-shadow: rgb(195, 195, 195) 0px 1px 2px 0px;
-			padding: 20px;
+			padding: 15px;
 			margin: 10px 0px 0px 0px;
 			width:270px;
 			font-size:14px; 
@@ -671,7 +671,7 @@
 		.btnli
 		{
 			position: absolute;
-			left:260px;
+			left:235px;
 			margin-bottom:20px;
 		}	
 	</style>
@@ -681,10 +681,11 @@
       <button id="btnInit" class="btn btn-primary mar" value="start">Monitor my location</button>
       <button id="btnStop" class="btn btn-warning mar" value="stop">Stop monitoring</button>
     </div>
-	<div id="count"></div>
-					<ul id="ul">
+	<div id="count" align="center"></div>
+			<div id="ul" align="left">
 			
-			</ul>
+			</div>
+			
     <div id="info" class="mar1"></div>
 
 	<div id="in" class="mar"></div>
@@ -877,7 +878,7 @@
 								animation: google.maps.Animation.DROP,
 								title: "Welcome to Thailand"
 							});
-
+			stop_watchlocation();
 		}
 
 			function successFunction(position) {
