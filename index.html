@@ -687,10 +687,7 @@
      
     </div>
 	<div id="count" align="center"></div>
-			<div id="ul" align="center">
-			
-			</div>
-			
+
     <div id="info" class="mar1"></div>
 
 	<div id="in" class="" align="center"></div>
@@ -860,8 +857,10 @@
 				$(document.createElement("img")).attr("src", image_url).attr('id','map').attr('class','mar2')
 			
 			);
-
-
+			$(document.body).append(
+				$(document.createElement("div")).attr("id", "ul").attr("align","center").append("</ul>")
+			
+			);
 					$("#map-canvas").css("display", "block");
 					$("#map-canvas").css("height", "400px");
 					$("#map-canvas").css("width","280px");
