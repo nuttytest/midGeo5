@@ -693,9 +693,9 @@
 			
     <div id="info" class="mar1"></div>
 
-	<div id="in" class="mar"></div>
-	   <div id="map-canvas" class="mar"></div>
-	<div id="infomap" class="mar"></div>
+	<div id="in" class="" align="center"></div>
+	   <div id="map-canvas" class="mar2"></div>
+	<div id="infomap" class="" align="center"></div>
 	
     <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
@@ -857,7 +857,7 @@
 							"&zoom=14&size=280x400&markers=color:blue|label:S|" + position.coords.latitude + ',' + position.coords.longitude;
 			$("#map").remove();
 			$(document.body).append(
-				$(document.createElement("img")).attr("src", image_url).attr('id','map').attr('class','mar')
+				$(document.createElement("img")).attr("src", image_url).attr('id','map').attr('class','mar2')
 			
 			);
 
